@@ -1,0 +1,225 @@
+html{
+ scroll-behavior: smooth;
+}
+
+/* ===== Color Palette from Logo ===== */
+:root {
+  --primary-blue: #00bfff;
+  --dark-gray: #1a1a1a;
+  --medium-gray: #2d2d2d;
+  --white: #ffffff;
+  --light-gray: #cccccc;
+}
+
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: var(--primary-blue);
+  padding: 0.7rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping to next line if needed */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo {
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--white);
+  white-space: nowrap; /* keeps name on one line */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover {
+  background: var(--primary-blue);
+  color: var(--dark-gray);
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== About Section ===== */
+.about {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* ===== Skills Section ===== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: var(--primary-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.skill:hover{
+ background-color: #0095cc;
+ transform: translateY(-3px);
+}
+
+/* ===== Projects Section ===== */
+
+.project-grid{
+  display: grid;
+  gap: 1rem;
+}
+
+.project {
+  background: var(--medium-gray);
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* ===== Contact ===== */
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Get in Touch ===== */
+.get-in-touch {
+  background: var(--medium-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: #2d2d2d;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background: #0095cc;
+}
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+  }
+
+  .nav-links {
+      justify-content: center;
+  }
+
+  .about {
+      text-align: center;
+  }
+
+  .about img {
+      margin-bottom: 1rem;
+  }
+}
+
+
