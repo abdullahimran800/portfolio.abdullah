@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Imran | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/yourkit.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+          <span>Abdullah Imran.</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Abdullah</span></h1>
+        <p>
+          A 16-year-old aspiring developer from Karachi. Passionate about
+          coding, football, and building modern web experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="about-container">
+        <img src="profile.jpg" alt="Abdullah" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm <strong>Abdullah Imran</strong>, currently in my last year
+            of O-Levels. I enjoy building websites with HTML, CSS, and exploring
+            digital marketing. Apart from coding, I love playing football and
+            learning new skills to grow as a developer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML5 & CSS3</div>
+        <div class="skill">Responsive Web Design</div>
+        <div class="skill">Digital Marketing</div>
+        <div class="skill">Creative Problem Solving</div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="ecommerce.webp" alt="Project 1" />
+          <h3>E-Commerce Project</h3>
+          <a
+            href="https://e-commerceprojectt.netlify.app"
+            target="_blank"
+            class="btn"
+            >View</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="ronaldo.jpg" alt="Project 2" />
+          <h3>Ronaldo Documentary</h3>
+          <a
+            href="https://ronaldosdocumentry.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="perfumes.jpg" alt="Project 3" />
+          <h3>Perfume Shop</h3>
+          <a
+            href="https://project-2perfume.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="AgeCalculator.png" alt="Project 4" />
+          <h3>Abdullah's Calculator</h3>
+          <a
+            href="https://abdullahsagecalculator.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="big.jpg" alt="Project 5" />
+          <h3>Real Estate Website</h3>
+          <a
+            href="https://dreamhousebyabdullah.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:abdullahimrandeveloper789@gmail.com">Click</a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/abdullah-imran-6659b2362/"
+              target="_blank"
+              >Click</a
+            >
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/abdullahimran800" target="_blank"
+              >Click</a
+            >
+          </p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2025 Abdullah Imran. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== JS for Hamburger ===== -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").classList.add("hidden");
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
